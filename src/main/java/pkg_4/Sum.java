@@ -5,6 +5,11 @@ public class Sum {
 		int c= a+b;
 		return c;
 	}
+public class Sub{
+	int substract(int a,int b){
+		int d=a+b;
+		return d;
+	}
 
 public static void main(String args[]) {
 	Sum obj= new Sum();
