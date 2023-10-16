@@ -13,8 +13,10 @@ public class Sub{
 
 public static void main(String args[]) {
 	Sum obj= new Sum();
+	Sub obj1=new Sub();
 	System.out.println(obj.add(6, 7));
 	System.out.println(obj.add(12, 5));
+	System.out.println(obj1.sub(6,4));
 
 	
 	
