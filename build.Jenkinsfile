@@ -40,16 +40,6 @@ pipeline {
                 sh "${MAVEN_HOME}/bin/mvn package"
             }
         }
-
-        stage('Deploy') {
-            steps {
-                echo 'Deploying the WAR file to Tomcat...'
-                // Assuming Tomcat manager script is available
-                withCredentials([usernamePassword(credentialsId: 'tomcat-credentials', usernameVariable: 'TOMCAT_USER', passwordVariable: 'TOMCAT_PASSWORD')]) {
-                    sh "${MAVEN_HOME}/bin/mvn tomcat7:deploy -Dtomcat.username=${TOMCAT_USER} -Dtomcat.password=${TOMCAT_PASSWORD}"
-                }
-            }
-        }
     }
 
     post {
