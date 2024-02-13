@@ -16,14 +16,14 @@ pipeline {
         stage('Code') {
             steps {
                 echo 'Running code analysis...'
-                // Add code analysis tools or checks here
+                // Remove this comment if you don't have specific code analysis tools
             }
         }
 
         stage('Review') {
             steps {
                 echo 'Performing code review...'
-                // Add code review tools or processes here
+                // Remove this comment if you don't have specific code review tools
             }
         }
 
